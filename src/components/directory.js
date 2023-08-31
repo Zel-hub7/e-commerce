@@ -40,8 +40,8 @@ const Directory = () => {
 
  return (
     <div className="directory-menu">
-      {data.map((item,id, imageUrl) => (
-        <Menu key={id} title={item.title} imageUrl={item.imageUrl} />
+      {data.map((item,imageUrl) => (
+        <Menu key={item.id} title={item.title} imageUrl={item.imageUrl} />
       ))}
     </div>
   );
