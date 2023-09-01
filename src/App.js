@@ -15,7 +15,7 @@ function App() {
     <div>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/show" element={<ShowPage />} />
+        <Route path="/shop" element={<ShowPage />} />
       </Routes>
     </div>
   );
