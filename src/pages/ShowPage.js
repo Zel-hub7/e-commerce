@@ -1,9 +1,10 @@
 import SHOP_DATA from "./ShowData"
+import CollectionPreview from "../components/Preview"
 
 const ShowPage = () => {
     return(
         <div>
-            <h1>This is the show page</h1>
+            <CollectionPreview items={SHOP_DATA} />
         </div>
     )
 }
