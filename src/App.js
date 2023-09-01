@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/homePage/HomePage";
+import ShowPage from "./pages/ShowPage";
 
 const HatsPage = () => {
   return (
@@ -13,8 +14,8 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/hats" element={<HatsPage />} />
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/show" element={<ShowPage />} />
       </Routes>
     </div>
   );
