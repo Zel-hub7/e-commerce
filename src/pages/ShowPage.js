@@ -1,11 +1,13 @@
-import SHOP_DATA from "./ShowData"
-import CollectionPreview from "../components/Preview"
+import SHOP_DATA from "./ShowData";
+import CollectionPreview from "../components/Preview";
 
 const ShowPage = () => {
-    return(
-        <div>
-            <CollectionPreview items={SHOP_DATA} />
-        </div>
-    )
-}
-export default ShowPage
+    return (
+      <div>
+        {SHOP_DATA.map((category) => (
+          <CollectionPreview key={category.key} items={category.items} title={category.title} />
+        ))}
+      </div>
+    );
+  };
+export default ShowPage;
